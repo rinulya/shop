@@ -1,0 +1,97 @@
+@import '../../node_modules/bootstrap/less/bootstrap.less';
+@font-face {
+  font-family: 'Bebas';
+  src: url('../../dist/fonts/bebasneue-webfont.eot'); /* IE9 Compat Modes */
+  src: url('../../dist/fonts/bebasneue-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../../dist/fonts/bebasneue-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../../dist/fonts/bebasneue-webfont.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    width: 1200px;
+}
+.banner{
+    height: 932px;
+    padding-top: 24px;
+    background: url("../../dist/images/girl.jpg") 50% 50% no-repeat;
+    background-size: cover;
+    &__sub-title{
+        color: white;
+        font-size: 20px;
+        font-weight: 300;
+        text-transform: uppercase;
+        &:last-of-type{
+            margin-bottom: 50px;
+        }
+    }
+    &__title{
+        font-family: 'Lato', sans-serif;
+        color: white;
+        font-size: 50px;
+        font-weight: 900;
+        margin: 50px auto;
+    }
+    &__content{
+        text-align: center;
+    }
+}
+.logo{
+    vertical-align: middle;
+    line-height: 1;
+    display: inline-block;
+    font-family: "Bebas";
+    color: #dc0000;
+    font-weight: 400;
+    font-size: 48px;
+    span{
+        font-size: 36px;
+    }
+}
+.menu{
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+    line-height: 1;
+    display: inline-block;
+    &__item{
+        display: inline-block;
+    }
+    &__link{
+        display: block;
+        color: white;
+        font-size: 14px;
+        font-weight: 400;
+        margin-left: 74px;
+    }
+    
+}
+.header{
+    margin-bottom: 260px;
+    text-align: justify;
+    line-height: 0;
+    font-size: 0;
+    &:after{
+        display: inline-block;
+        width: 100%;
+        height: 0;
+        content: '';
+        
+    }
+    &:before{
+        display: inline-block;
+        vertical-align: middle;
+        width: 0;
+        content: '';
+    }
+}
+.button{
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 14px;
+    font-weight: 900;
+    padding: 18px 58px;
+    border: 2px solid white;
+}
