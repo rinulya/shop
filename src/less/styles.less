@@ -9,11 +9,9 @@
 body{
     font-family: 'Open Sans', sans-serif;
 }
-.container{
-    width: 1200px;
-}
 .banner{
-    height: 932px;
+    position: relative;
+    height: 100vh;
     padding-top: 24px;
     background: url("../../dist/images/girl.jpg") 50% 50% no-repeat;
     background-size: cover;
@@ -34,7 +32,10 @@ body{
         margin: 50px auto;
     }
     &__content{
+        position: absolute;
         text-align: center;
+        top: 50%;
+        transform: translateY(-50%);
     }
 }
 .logo{
@@ -82,7 +83,7 @@ body{
     &:before{
         display: inline-block;
         vertical-align: middle;
-        width: 0;
+        width: 100%;
         content: '';
     }
 }
@@ -94,4 +95,7 @@ body{
     font-weight: 900;
     padding: 18px 58px;
     border: 2px solid white;
+}
+.carousel-inner, .item{
+    height: 100%;
 }

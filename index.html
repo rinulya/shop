@@ -8,8 +8,8 @@
 	<title>Document</title>
 </head>
 <body>
-	<div class="banner">
-        <div class="container">
+	<div id="carousel-example-generic" class="carousel slide banner" data-ride="carousel">
+	<div class="container">
 	    <div class="header">
         <a class="logo">BRAND <span>LY</span></a>
 	    <ul class="menu">
@@ -21,13 +21,26 @@
             <li class="menu__item"><a class="menu__link">Contact</a></li>
 	    </ul>
 	    </div>
-	    <div class="banner__content">
+	</div>
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+     <div class="banner__content carousel-caption">
 	        <h3 class="banner__sub-title">Spring / Summer Collection</h3>
 	        <h2 class="banner__title">UP TO 60% DISCOUNT ON NEW ARRIVALS</h2>
 	        <h3 class="banner__sub-title">TRENDING NEW ITEMS,FROM CREATORS AROUND THE WORLD</h3>
 	        <a class="button">SHOP NOW</a>
 	    </div>
-	    </div>
-	</div>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
